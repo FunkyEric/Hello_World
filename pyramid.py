@@ -35,20 +35,4 @@ for i in range(int(width/2)):
 
 
 
-# width = 100
-# high = 0
 
-# while width > 0:
-#     # for a in range(width):
-#     #     for b in range(width):
-#     #         mc.setBlock(x + a + high, y + high, z + b + high, block.GOLD_BLOCK.id)
-#
-#     mc.setBlocks(x + high,
-#                  y + high,
-#                  z + high,
-#                  x + high + width - 1,
-#                  y + high,
-#                  z + high + width - 1,
-#                  block.GOLD_BLOCK.id)
-#     width -= 2
-#     high += 1

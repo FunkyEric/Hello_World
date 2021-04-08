@@ -45,7 +45,7 @@ for i in range(30):
 
 
 while True:
-	# 获取玩家当前位置的空间坐标
+    # 获取玩家当前位置的空间坐标
     pos = mc.entity.getTilePos(id)
     # 在玩家脚下创造玻璃模块
     mc.setBlock(pos.x, pos.y-1, pos.z, block.FIRE.id)

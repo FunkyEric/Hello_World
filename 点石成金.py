@@ -4,7 +4,7 @@ import mcpi.minecraft as minecraft
 import mcpi.block as block
 
 from mcpi.event import BlockEvent
-
+# print(BlockEvent.mro)
 # 与我的世界游戏建立连接
 mc = minecraft.Minecraft.create()
 id = mc.getPlayerEntityId('Eric')
@@ -14,8 +14,9 @@ while True:
     # 循环所有的敲击世间
     for blockhit in mc.events.pollBlockHits():
         # 如果是方块被敲击
-        if blockhit.type == BlockEvent.HIT:
-            mc.setBlock(blockhit.pos, block.SEA_LANTERN)
+        if blockhit.entityId == id and  blockhit.type == BlockEvent.HIT:
+            mc.(blockhit.pos, block.GOLD_BLOCK)
+
 
 
 

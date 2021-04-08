@@ -3,12 +3,13 @@ import mcpi.block as block
 import time
 
 mc = minecraft.Minecraft.create()
-
+id = mc.getPlayerEntityId('Eric')
 GAP = block.AIR.id
 WALL = block.GOLD_BLOCK.id
 FLOOR = block.GRASS.id
 
-pos = mc.player.getTilePos()
+# 获得玩家的坐标位置
+pos = mc.entity.getTilePos(id)
 ORIGIN_X = pos.x+1
 ORIGIN_Y = pos.y
 ORIGIN_Z = pos.z+1
